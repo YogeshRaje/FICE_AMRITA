@@ -151,15 +151,7 @@ step2) Intinitalize and Invoke Intel optimized complier using follwoing command
 step3) create helloworld.c program using nano editor
 >nano helloworld.c
 
-step4)compile and execute program 
->dpcpp welcome.c -o intelwelcomedemo.out
->./intelwelcomedemo.out
-
-
-step5) diaplay how much time is taken by above program 
-add time code into the helloword.c and run the code with above steps 
-
-code for hellowordwithtme.c
+//code for helloworld.c
 
 #include <stdio.h>
 #include <time.h>
@@ -176,6 +168,17 @@ int main() {
    	printf("The elapsed time is %f seconds", time_spent);
    	return 0;
 }
+
+
+
+step4)compile and execute program 
+>icpx -fsycl helloword.c -o intelhelloworld.out        or dpcpp helloworld.c -o intelhelloworld.out
+>./intelhelloworld.out
+
+
+
+
+
 
 
 
